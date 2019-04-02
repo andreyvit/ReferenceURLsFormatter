@@ -56,7 +56,7 @@ func run() error {
 
 		urls := urlsRe.FindAllString(line, -1)
 		if len(urls) == 0 {
-			log.Printf("No URLs found in: %v", line)
+			fmt.Fprintf(errors, "No URLs found in line: %v\n", line)
 		}
 		for _, url := range urls {
 			if !strings.Contains(url, "://") {
