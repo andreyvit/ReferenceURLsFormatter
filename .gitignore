@@ -1,4 +1,8 @@
+output.txt
+errors.txt
+
 # Binaries for programs and plugins
+ReferenceURLsFormatter
 *.exe
 *.exe~
 *.dll
